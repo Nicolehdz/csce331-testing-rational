@@ -1,7 +1,5 @@
 # Constructor correctness
-[back to Final Specification](client_complete_specification.md)
-
-<br/>
+[back to final specification](client_complete_specification.md)
 
 Let's start with the default constructor.
 
@@ -14,7 +12,7 @@ Suppose this method was already implemented. How would you know if it was correc
 <details>
   <summary>Expand after you think for yourself.</summary>
 
-To test whether the default constructor is correct, we need to use it to create a `Rational` and then verify that the `Rational` has numerator 0 and denominator 1.
+To test whether the default constructor is correct, we need to use it to create an instance of <code class="language-plaintext highlighter-rouge">Rational</code> and then verify that the <code class="language-plaintext highlighter-rouge">Rational</code> object has numerator 0 and denominator 1.
 
 1. Given no preconditions
 1. When I create a default `Rational` value
@@ -23,10 +21,6 @@ To test whether the default constructor is correct, we need to use it to create 
 
 </details>
 
-<br/>
-
 Now, let's write a test for the code we wish we had. Then we will write just enough code to pass the test.
-<br/>
-<br/>
 
-[Next section: Getting Started with Java Unit Testing](getting_started_with_java_unit_testing.md)
+[next section: getting started with java unit testing](getting_started_with_java_unit_testing.md)

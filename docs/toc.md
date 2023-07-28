@@ -7,4 +7,6 @@
 | [My Thoughts on Refined Functional Requirements](refined_functional_requirements_my_thoughts.md) | My thoughts on the functional requirements. |
 | [(Re)Validate the Requirements](client_complete_specification.md) | The client signs off on the complete specification. |
 | [Constructor Correctness](constructor_correctness.md) | We start writing tests for the constructors. |
-
+| [Getting Started with Java Unit Testing](getting_started_with_java_unit_testing.md) |  |
+| [Hamcrest](add_hamcrest_dependency.md) | Add Hamcrest to the project. |
+| [Constructor Correctness, continued](constructor_correctness_continued.md) |  |
