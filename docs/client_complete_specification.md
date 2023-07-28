@@ -1,18 +1,15 @@
 # Complete Specification
-[back to refined functional requirements](refined_functional_requirements.md)
+[back to my thoughts on the refined functional requirements](refined_functional_requirements_my_thoughts.md)
 
-<br/>
-
-After sending our refined functional requirements to the client, they look it over, think a bit about what they need to do and how they want to do it, and reply with these final specifications:
-<br/>
+We sent our refined functional requirements to the client. The client reviewed the requirements (and, hopefully, thought a bit about what they need to do and how they want to do it) and replied with these final specifications:
 
 `Rational` must extend `Number` and implement `Comparable<Number>`.
 
 | method | description |
 | ------ | ----------- |
-| `Rational()` | Constructs the rational number <sup>0</sup>/<sub>1</sub>. |
-| `Rational(a: integer)` | Constructs the rational number <sup>*a*</sup>/<sub>1</sub>. |
-| `Rational(a, b: integers)` | Constructs the rational number <sup>*a*</sup>/<sub>*b*</sub> in canonical form.  Throws an IllegalArgumentException if *b* is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
+| `Rational()` | > Constructs the rational number <sup>0</sup>/<sub>1</sub>. |
+| `Rational(a: integer)` | > Constructs the rational number <sup>*a*</sup>/<sub>1</sub>. |
+| `Rational(a, b: integers)` | > Constructs the rational number <sup>*a*</sup>/<sub>*b*</sub> in canonical form.  Throws an IllegalArgumentException if *b* is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
 | `Rational(r: Rational)` | Constructs a copy of the given `Rational`. |
 | `numerator()` &rarr; `integer` | returns the numerator of this value. |
 | `denominator()` &rarr; `integer` | returns the denominator of this value. |
@@ -31,13 +28,8 @@ After sending our refined functional requirements to the client, they look it ov
 | `isMinusOne` &rarr; `boolean` | returns `true` if *this* is  canonical -1. |
 | `toString()` &rarr; `String` | the string representation of this value. Whole numbers are not represented as fractions, e.g. 7 not 7/1.  The negative sign, if there is one, goes in front of the number, e.g. -1/7 not 1/-7.|
 
-<br/>
-
 At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (don't forget the `Comparable` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
-<br/>
 
 Now, it's time to think about measuring the functional correctness of these methods.  We will do this one function at a time, starting with what seems like the simplest and most fundamental operation: construction.
-<br/>
-<br/>
 
 [Next section: Constructor Correctness](constructor_correctness.md)
