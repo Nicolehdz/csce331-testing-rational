@@ -1,0 +1,43 @@
+# Complete Specification
+[back to refined functional requirements](refined_functional_requirements.md)
+
+<br/>
+
+After sending our refined functional requirements to the client, they look it over, think a bit about what they need to do and how they want to do it, and reply with these final specifications:
+<br/>
+
+`Rational` must extend `Number` and implement `Comparable<Number>`.
+
+| method | description |
+| ------ | ----------- |
+| `Rational()` | Constructs the rational number <sup>0</sup>/<sub>1</sub>. |
+| `Rational(a: integer)` | Constructs the rational number <sup>*a*</sup>/<sub>1</sub>. |
+| `Rational(a, b: integers)` | Constructs the rational number <sup>*a*</sup>/<sub>*b*</sub> in canonical form.  Throws an IllegalArgumentException if *b* is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
+| `Rational(r: Rational)` | Constructs a copy of the given `Rational`. |
+| `numerator()` &rarr; `integer` | returns the numerator of this value. |
+| `denominator()` &rarr; `integer` | returns the denominator of this value. |
+| `opposite()` &rarr; `Rational` | returns a new rational number which is the additive inverse of this value.<br /><sup><sub>Additive inverse means the sum of the values is 0, e.g. <sup>2</sup>/<sub>3</sub> + <sup>-2</sup>/<sub>3</sub> = 0 so <sup>-2</sup>/<sub>3</sub> is the additive inverse of <sup>2</sup>/<sub>3</sub>.</sub></sup> |
+| `reciprocal()` &rarr; `Rational` | returns a new rational number which is the multiplicative inverse of this value. Throws an IllegalArgumentException if *this* is 0.<br /><sup><sub>Multiplicative inverse means the product of the values is 1, e.g. <sup>2</sup>/<sub>3</sub> * <sup>3</sup>/<sub>2</sub> = 1 so <sup>3</sup>/<sub>2</sub> is the multiplicative inverse of <sup>2</sup>/<sub>3</sub>.</sub></sup> |
+| `plus(r: Rational)` &rarr; `Rational` | returns a new rational number which is the sum of *this* and `r`. |
+| `minus(r: Rational)` &rarr; `Rational` | returns a new rational number which is the difference of *this* and `r`. |
+| `times(r: Rational)` &rarr; `Rational` | returns a new rational number which is the product of *this* and `r`. |
+| `dividedBy(r: Rational)` &rarr; `Rational` | returns a new rational number which is the quotient of *this* and `r`. Throws an IllegalArgumentException if *r* is 0. |
+| `raisedToThePowerOf(n: integer)` &rarr; `Rational` | returns a new rational number which is (<sup>*a*</sup>/<sub>*b*</sub>)<sup>*n*</sup>.  Throws an IllegalArgumentException if *this* is 0 and *n* is negative. |
+| `equals(o: Object)` &rarr; `boolean` | returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: java.lang.Number).</sub></sup>  |
+| `greaterThan(n: Number)` &rarr; `boolean` | returns `true` if the floating point value of *this* is strictly greater than *n*. |
+| `lessThan(n: Number)` &rarr; `boolean` | returns `true` if floating point value of *this* is strictly less than *n*. |
+| `isZero` &rarr; `boolean` | returns `true` if *this* is canonical 0. |
+| `isOne` &rarr; `boolean` | returns `true` if *this* is  canonical 1. |
+| `isMinusOne` &rarr; `boolean` | returns `true` if *this* is  canonical -1. |
+| `toString()` &rarr; `String` | the string representation of this value. Whole numbers are not represented as fractions, e.g. 7 not 7/1.  The negative sign, if there is one, goes in front of the number, e.g. -1/7 not 1/-7.|
+
+<br/>
+
+At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (don't forget the `Comparable` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
+<br/>
+
+Now, it's time to think about measuring the functional correctness of these methods.  We will do this one function at a time, starting with what seems like the simplest and most fundamental operation: construction.
+<br/>
+<br/>
+
+[Next section: Constructor Correctness](constructor_correctness.md)
