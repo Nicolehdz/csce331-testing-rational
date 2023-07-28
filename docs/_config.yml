@@ -1,1 +1,6 @@
 
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
+title: CSCE 331 Testing - Rational
+description: Learn and practice Test-Driven Development in Java with Maven, JUnit, Hamcrest, and Jacoco.
