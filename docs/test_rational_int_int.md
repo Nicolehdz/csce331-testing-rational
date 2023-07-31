@@ -1,11 +1,11 @@
-# Test the next constructor: Rational(int, int)
-[back to test `Rational(int)`](test_rational_int.md)
+# Test Rational(int, int)
+[back to test Rational(int)](test_rational_int.md)
 
 Let's write a test for the 2-arg constructor.
 
 | method | description |
 | ------ | ----------- |
-| `Rational(a, b: integers)` | Constructs the rational number <sup>'a'</sup>/<sub>'b'</sub> in canonical form.  Throws an exception if 'b' is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
+| `Rational(a, b: integers)` | Constructs the rational number <sup>`a`</sup>/<sub>`b`</sub> in canonical form.  Throws an exception if `b` is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
 
 Suppose this method was already implemented. How would you know if it was correct?
 

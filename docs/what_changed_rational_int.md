@@ -24,7 +24,7 @@ Test: `mvn test`.
 
 You should see that the build succeeds because all tests are passing.
 
-If all tests are passing: `git add .; git commit -m "all tests passing"`. Otherwise, debug your code or your test.
+If all tests are passing: `git add . ; git commit -m "all tests passing"`. Otherwise, debug your code or your test.
 
 <details>
    <summary>Are we done!?</summary>

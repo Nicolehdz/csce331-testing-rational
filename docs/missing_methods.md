@@ -19,7 +19,7 @@ public int denominator() {
 
 Test: `mvn test`.  You should see that the build succeeds because all tests are passing.
 
-Since all tests are passing: `git add .; git commit -m "all tests passing"`
+Since all tests are passing: `git add . ; git commit -m "all tests passing"`
 
 [back to constructor correctness, continued](constructor_correctness_continued.md)
 

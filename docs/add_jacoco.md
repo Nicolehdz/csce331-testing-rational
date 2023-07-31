@@ -1,5 +1,5 @@
 # Add Jacoco to the project
-[back to Coverage](coverage.md)
+[back to coverage](coverage.md)
 
 In `pom.xml`, in the `<build>` group, add the following (**outside** of `<pluginManagement>`):
 
@@ -79,15 +79,15 @@ The `main` method.
 <details>
    <summary>How to fix?</summary>
 
-Delete it!
+Delete it!  It was auto-generated, but we don't need it.
 
 </details>
 
 Re-run `mvn verify`.  The build should succeed because now &ge; 90% of your code is covered by tests (it should be 100% now).
 
-If your tests are passing and your coverage is high, now is a good time to `git add .; git commit -m "all tests passing"`.
+If your tests are passing and your coverage is high, now is a good time to `git add . ; git commit -m "all tests passing"`.
 
-[next section: Refactoring](refactoring.md)
+[next section: refactoring](refactoring.md)
 
 <hr>
 

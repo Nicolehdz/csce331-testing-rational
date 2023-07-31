@@ -1,5 +1,5 @@
-# What Did You Have To Add and Change for Rational(int, int)?
-[back to test Rational(int)](test_rational_int_int.md)
+# What Changed for Rational(int, int)?
+[back to test Rational(int, int)](test_rational_int_int.md)
 
 Again (and as expected), this test drove a few additions and changes:
 
@@ -34,7 +34,7 @@ Test: `mvn test`.
 
 You should see that the build succeeds because all tests are passing.
 
-If all tests are passing: `git add .; git commit -m "all tests passing"`. Otherwise, debug your code or your test.
+If all tests are passing: `git add . ; git commit -m "all tests passing"`. Otherwise, debug your code or your test.
 
 <details>
    <summary>Are we done!?</summary>
@@ -50,7 +50,7 @@ Coverage!
 
 <br/>
 
-[next section: Measuring Coverage](coverage.md)
+[next section: measuring coverage](coverage.md)
 
 <hr>
 
