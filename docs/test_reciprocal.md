@@ -63,4 +63,8 @@ Is your coverage still at 100%?  If not, add more tests.
 <br/>
 <br/>
 
-[Next section: Write tests for multiplication](test_times.md)
+[next section: Write tests for multiplication](test_times.md)
+
+<hr>
+
+[table of contents](toc.md)

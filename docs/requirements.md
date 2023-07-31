@@ -26,3 +26,7 @@ Think for yourself about what the `Rational` class must do.  Make a list of at l
 Sometimes, the necessary operations are known ahead of time and are provided as part of the specification.  Sometimes, we can take our list and validate it with someone who has authority over the project specifications, e.g. the product owner or the client.
 
 [next section: validate requirements](client_functional_requirements.md)
+
+<hr>
+
+[table of contents](toc.md)

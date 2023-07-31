@@ -30,3 +30,7 @@ After sending our list of expected functional requirements to the client, they l
 Next, we need to take each of the operations and determine what are the inputs and the outputs and/or side-effects.  We also need to think about invalid inputs and how they should be handled.
 
 [next section: refined functional requirements.](refined_functional_requirements.md)
+
+<hr>
+
+[table of contents](toc.md)

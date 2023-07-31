@@ -36,4 +36,8 @@ You will probably make errors when coding.  If you discover the error in the mom
 
 ## Submission
 
-[Next section: Ready to Submit](submission.md)
+[next section: Ready to Submit](submission.md)
+
+<hr>
+
+[table of contents](toc.md)

@@ -13,3 +13,7 @@ zip submission.zip src/main/java/numbers/Rational.java src/test/java/numbers/Rat
 ```
 
 [Go to the Assignment on Gradescope](https://www.gradescope.com/courses/561081/assignments/2993424) (links to external site)
+
+<hr>
+
+[table of contents](toc.md)

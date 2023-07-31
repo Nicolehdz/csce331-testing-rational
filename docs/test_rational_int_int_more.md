@@ -75,4 +75,8 @@ At this point, it's fairly safe to say that the code we've written so far is pro
 <br/>
 <br/>
 
-[Next section: Test `Rational(Rational)`](test_copy_constructor.md)
+[next section: Test `Rational(Rational)`](test_copy_constructor.md)
+
+<hr>
+
+[table of contents](toc.md)

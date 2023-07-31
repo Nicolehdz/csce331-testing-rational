@@ -53,4 +53,8 @@ Is your coverage at 100%?  If not, add more tests to cover what was missed.
 <br/>
 <br/>
 
-[Next section: Continue Test-Driven Development](the_rest_of_the_fing_tests.md)
+[next section: Continue Test-Driven Development](the_rest_of_the_fing_tests.md)
+
+<hr>
+
+[table of contents](toc.md)

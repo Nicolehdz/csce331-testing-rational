@@ -28,4 +28,7 @@ It needs to represent a rational number and it needs to provide arithmetic and c
 
 [next section: gathering requirements.](requirements.md)
 
+<hr>
+
 [table of contents](toc.md)
+

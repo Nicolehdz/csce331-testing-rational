@@ -44,4 +44,8 @@ We
 
 We are now ready to get back to testing!
 
-[Next section: Hamcrest](add_hamcrest_dependency.md)
+[next section: hamcrest](add_hamcrest_dependency.md)
+
+<hr>
+
+[table of contents](toc.md)

@@ -24,3 +24,7 @@ To test whether the default constructor is correct, we need to use it to create 
 Now, let's write a test for the code we wish we had. Then we will write just enough code to pass the test.
 
 [next section: getting started with java unit testing](getting_started_with_java_unit_testing.md)
+
+<hr>
+
+[table of contents](toc.md)

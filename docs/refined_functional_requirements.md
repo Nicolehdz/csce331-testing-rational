@@ -5,4 +5,8 @@ For each operation in the list on the previous page, identify the inputs (how ma
 
 Again, sometimes, the necessary inputs, outputs, and error conditions are known ahead of time and are provided as part of the specification or, sometimes, we can take our interface design and validate it with someone who has authority over the project specifications.
 
-[see my thoughts on the refined functional requirements](refined_functional_requirements_my_thoughts.md)
+[next section: my thoughts on the refined functional requirements](refined_functional_requirements_my_thoughts.md)
+
+<hr>
+
+[table of contents](toc.md)

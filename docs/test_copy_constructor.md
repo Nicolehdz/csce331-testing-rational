@@ -59,4 +59,8 @@ Review your code.  Consider if refactoring makes sense right now.  Probably not.
 <br/>
 <br/>
 
-[Next section: Write tests for `opposite()`](test_opposite.md)
+[next section: Write tests for `opposite()`](test_opposite.md)
+
+<hr>
+
+[table of contents](toc.md)

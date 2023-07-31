@@ -27,4 +27,8 @@ After making your refactoring changes, re-run the tests: `mvn test` (this is wil
 <br/>
 <br/>
 
-[Next section: More testing for `Rational(int, int)`](test_rational_int_int_more.md)
+[next section: More testing for `Rational(int, int)`](test_rational_int_int_more.md)
+
+<hr>
+
+[table of contents](toc.md)

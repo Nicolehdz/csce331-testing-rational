@@ -87,4 +87,8 @@ Re-run `mvn verify`.  The build should succeed because now &ge; 90% of your code
 
 If your tests are passing and your coverage is high, now is a good time to `git add .; git commit -m "all tests passing"`.
 
-[Next section: Refactoring](refactoring.md)
+[next section: Refactoring](refactoring.md)
+
+<hr>
+
+[table of contents](toc.md)

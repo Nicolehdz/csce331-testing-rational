@@ -106,3 +106,7 @@
    * errors: none
 
 [next section: (re)validate the requirements](client_complete_specification.md)
+
+<hr>
+
+[table of contents](toc.md)

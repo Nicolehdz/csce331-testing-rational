@@ -47,4 +47,8 @@ That should have felt quite easy.
 <br/>
 <br/>
 
-[Next section: Write tests for `reciprocal()`](test_reciprocal.md)
+[next section: Write tests for `reciprocal()`](test_reciprocal.md)
+
+<hr>
+
+[table of contents](toc.md)

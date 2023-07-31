@@ -32,4 +32,8 @@ At this this point, we now know the methods and their signatures for every opera
 
 Now, it's time to think about measuring the functional correctness of these methods.  We will do this one function at a time, starting with what seems like the simplest and most fundamental operation: construction.
 
-[Next section: Constructor Correctness](constructor_correctness.md)
+[next section: Constructor Correctness](constructor_correctness.md)
+
+<hr>
+
+[table of contents](toc.md)
