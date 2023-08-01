@@ -1,5 +1,5 @@
-# Write tests for opposite()
-[back to testing Rational(Rational)](test_copy_constructor.md)
+# Write Tests and Implement opposite()
+[back to Rational(Rational)](test_copy_constructor.md)
 
 | method | description |
 | ------ | ----------- |

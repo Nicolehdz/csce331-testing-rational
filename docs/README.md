@@ -26,7 +26,7 @@ What does the class need to do?
 It needs to represent a rational number and it needs to provide arithmetic and comparison operations.
 </details>
 
-[next section: gathering requirements.](requirements.md)
+[next section: gathering requirements](requirements.md)
 
 <hr>
 

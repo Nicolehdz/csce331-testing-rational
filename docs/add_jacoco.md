@@ -1,4 +1,4 @@
-# Add Jacoco to the project
+# Add Jacoco to the Project
 [back to coverage](coverage.md)
 
 In `pom.xml`, in the `<build>` group, add the following (**outside** of `<pluginManagement>`):

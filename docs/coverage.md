@@ -1,5 +1,5 @@
-# Measuring coverage
-[back to test Rational(int, int)](test_rational_int_int.md)
+# Measuring Coverage
+[back to Rational(int, int)](test_rational_int_int.md)
 
 Coverage measures how much of our code our tests are exercising ("covering").  Our goal is to have as much coverage as we can, at least 90%.
 

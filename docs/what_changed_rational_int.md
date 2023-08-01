@@ -1,5 +1,5 @@
-# What Did You Have To Add and Change for Rational(int)?
-[back to test Rational(int)](test_rational_int.md)
+# What Changed for Rational(int)?
+[back to Rational(int)](test_rational_int.md)
 
 Turns out, this one little test required some relatively big changes.
 
@@ -38,7 +38,7 @@ No!
 We need to test the 2-argument constructor.
 </details>
 
-[next section: test Rational(int, int)](test_rational_int_int.md)
+[next section: test and implement Rational(int, int)](test_rational_int_int.md)
 
 <hr>
 

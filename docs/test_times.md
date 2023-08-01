@@ -1,5 +1,5 @@
-# Write tests for times(Rational)
-[back to testing reciproical()](test_reciprocal.md)
+# Write Tests and Implement times(Rational)
+[back to reciproical()](test_reciprocal.md)
 
 | method | description |
 | ------ | ----------- |

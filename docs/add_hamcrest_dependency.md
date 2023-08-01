@@ -14,7 +14,7 @@ I want us to use [Hamcrest](https://hamcrest.org/JavaHamcrest/tutorial) for writ
 
 Run `mvn test` again to be sure everything still works.  You should be able to see maven downloading Hamcrest.
 
-[next section: constructor correctness, continued](constructor_correctness_continued.md)
+[next section: test and implement Rational()](constructor_correctness_continued.md)
 
 <hr>
 

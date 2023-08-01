@@ -1,4 +1,4 @@
-# Constructor correctness
+# Constructor Correctness
 [back to final specification](client_complete_specification.md)
 
 Let's start with the default constructor.

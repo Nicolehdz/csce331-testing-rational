@@ -1,4 +1,4 @@
-# Test Rational(int, int)
+# Write Tests and Implement Rational(int, int)
 [back to test Rational(int)](test_rational_int.md)
 
 Let's write a test for the 2-arg constructor.

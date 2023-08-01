@@ -1,5 +1,5 @@
-# Test Rational(int)
-[back to constructor correctness, continued](constructor_correctness_continued.md)
+# Write Tests and Implement Rational(int)
+[back to testing and implementing Rational() ](constructor_correctness_continued.md)
 
 Let's write a test for the 1-argument constructor.
 

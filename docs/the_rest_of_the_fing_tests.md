@@ -1,5 +1,5 @@
-# By now you should've somehow realized what you gotta do
-[back to testing times(Rational)](test_times.md)
+# By Now You Should've Somehow Realized What You Gotta Do
+[back to times(Rational)](test_times.md)
 
 Follow [the Test-Driven Development process](tdd_process.md) for each remaining functional requirement.
 

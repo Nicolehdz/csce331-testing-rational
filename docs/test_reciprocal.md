@@ -1,5 +1,5 @@
-# Write tests for `reciprocal()`
-[back to testing opposite()](test_opposite.md)
+# Write Tests and Implement `reciprocal()`
+[back to opposite()](test_opposite.md)
 
 | method | description |
 | ------ | ----------- |
@@ -49,7 +49,7 @@ assertThrows(IllegalArgumentException.class, value::reciprocal);
 
 **IMPORTANT** Take care to strictly adhere to [the TDD process](tdd_process.md)
 
-[next section: Test times(Rational)](test_times.md)
+[next section: test and implement times(Rational)](test_times.md)
 
 <hr>
 

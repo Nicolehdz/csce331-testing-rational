@@ -1,5 +1,5 @@
 # My Thoughts on Testing the Default Constructor
-[back to constructor correctness, continued](constructor_correctness_continued.md)
+[back to Rational()](constructor_correctness_continued.md)
 
 There's actually not much we can do about testing the default constructor in isolation.  We didn't even have to implement it in order to pass the test.  That's one of the tricky parts of testing: being clear on what you are actually testing.
 
@@ -11,7 +11,7 @@ These two methods, `numerator()` and `denominator()`, are special methods.  They
 
 Let's just assume we're good and push on with testing.  We want to drive all of our development with our tests. We do not want to let our code get ahead of our tests.  If a test isn't failing, there's only one reason to touch the code: refactoring (which we will meet later).
 
-[back to constructor correctness, continued](constructor_correctness_continued.md)
+[back to Rational()](constructor_correctness_continued.md)
 
 <hr>
 

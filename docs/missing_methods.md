@@ -1,5 +1,5 @@
 # What We Should Do About the Missing Methods
-[back to constructor correctness, continued](constructor_correctness_continued.md)
+[back to Rational()](constructor_correctness_continued.md)
 
 We should implement the missing methods!
 
@@ -21,7 +21,7 @@ Test: `mvn test`.  You should see that the build succeeds because all tests are 
 
 Since all tests are passing: `git add . ; git commit -m "all tests passing"`
 
-[back to constructor correctness, continued](constructor_correctness_continued.md)
+[back to Rational()](constructor_correctness_continued.md)
 
 <hr>
 

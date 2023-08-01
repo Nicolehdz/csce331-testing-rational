@@ -1,5 +1,5 @@
 # What Changed for Rational(int, int)?
-[back to test Rational(int, int)](test_rational_int_int.md)
+[back to Rational(int, int)](test_rational_int_int.md)
 
 Again (and as expected), this test drove a few additions and changes:
 

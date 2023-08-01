@@ -1,4 +1,4 @@
-# Test the copy constructor
+# Write Tests and Implement Rational(Rational)
 [back to the test-driven development process](tdd_process.md)
 
 Let's write a test for the copy constructor.
@@ -34,7 +34,7 @@ assertThat("the denominatro should be 3", value.denominator(), is(3));
 
 **IMPORTANT** Take care to strictly adhere to [the TDD process](tdd_process.md)
 
-[next section: test opposite()](test_opposite.md)
+[next section: test and implement opposite()](test_opposite.md)
 
 <hr>
 

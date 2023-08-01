@@ -1,5 +1,5 @@
 # Getting Started with Java Unit Testing
-[back to Constructor Correctness](constructor_correctness.md)
+[back to constructor correctness](constructor_correctness.md)
 
 Let's get our testing framework set up now.  I will walk you through every step.
 

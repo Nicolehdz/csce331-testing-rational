@@ -1,9 +1,9 @@
 # Test-Driven Development Process
-[back to testing Rational(int, int)](test_rational_int_int_more.md)<br/>
-[back to testing Rational(Rational)](test_copy_constructor.md)<br/>
-[back to testing opposite()](test_opposite.md)<br/>
-[back to testing reciproical()](test_reciprocal.md)<br/>
-[back to testing times(Rational)](test_reciprocal.md)<br/>
+[back to Rational(int, int)](test_rational_int_int_more.md)<br/>
+[back to Rational(Rational)](test_copy_constructor.md)<br/>
+[back to opposite()](test_opposite.md)<br/>
+[back to reciproical()](test_reciprocal.md)<br/>
+[back to times(Rational)](test_reciprocal.md)<br/>
 
 What we are doing is called **Test-Driven Development** (TDD).  The TDD process goes like this:
 
@@ -34,7 +34,7 @@ Following the TDD process is not easy and requires discipline. But, if you do fo
 
 The more you practice TDD, the easier it will be to do it.
 
-[next section: test Rational(Rational)](test_copy_constructor.md)
+[next section: test and implement Rational(Rational)](test_copy_constructor.md)
 
 <hr>
 

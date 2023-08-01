@@ -1,4 +1,4 @@
-# Constructor correctness, continued
+# Write Tests and Implement Rational()
 [back to hamcrest](add_hamcrest_dependency.md)
 
 We need to implement our test for the default constructor, `Rational()`:
@@ -40,7 +40,7 @@ What should we do? Think, then click here to [see the answer.](missing_methods.m
 
 Is there another test we could add to demonstrate that our code is not functionally correct? Think, then click here to [see my thoughts](constructor_correctness_test_thoughts.md)
 
-[next section: test Rational(int)](test_rational_int.md)
+[next section: test and implement Rational(int)](test_rational_int.md)
 
 <hr>
 

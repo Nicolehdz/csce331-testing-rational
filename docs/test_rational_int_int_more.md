@@ -1,4 +1,4 @@
-# Is Rational(int, int) correct?
+# Is Rational(int, int) Correct?
 [back to refactoring](refactoring.md)
 
 Nope.
