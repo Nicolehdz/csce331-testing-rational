@@ -6,6 +6,8 @@ Submit the following files to Gradescope:
 * `src/main/java/numbers/Rational.java`
 * `src/test/java/numbers/RationalTest.java`
 
+**NOTE** You do not need to submit `pom.xml`.  You can [download/copy the provided `pom.xml` file for this activity](https://github.com/tamu-edu-students/csce331-testing-rational/blob/main/pom.xml) on GitHub.
+
 You can create the zip file for submission like so:
 
 ```bash
