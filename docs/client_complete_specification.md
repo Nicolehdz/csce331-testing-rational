@@ -8,7 +8,7 @@ We sent our refined functional requirements to the client. The client reviewed t
 | method | description |
 | ------ | ----------- |
 | `Rational()` | Constructs the rational number <sup>0</sup>/<sub>1</sub>. |
-| `Rational(a: integer)` | Constructs the rational number <sup>*a*</sup>/<sub>1</sub>. |
+| `Rational(a: integer)` | Constructs the rational number <sup>`a`</sup>/<sub>1</sub>. |
 | `Rational(a, b: integers)` | Constructs the rational number <sup>`a`</sup>/<sub>`b`</sub> in canonical form.  Throws an IllegalArgumentException if `b` is 0.<br /><sup><sub>Canonical form means the negative sign, if there is one, belongs to the numerator and the fraction is irreducible, e.g. <sup>48</sup>/<sub>-72</sub> is reducible to <sup>-2</sup>/<sub>3</sub>, which is the canonical form.</sub></sup> |
 | `Rational(r: Rational)` | Constructs a copy of the given `Rational`. |
 | `numerator()` &rarr; `integer` | Returns the numerator of this value. |
@@ -19,10 +19,10 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `minus(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the difference of this value and `r`. |
 | `times(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the product of this value and `r`. |
 | `dividedBy(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the quotient of this value and `r`. Throws an IllegalArgumentException if `r` is 0. |
-| `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is (<sup>*a*</sup>/<sub>*b*</sub>)<sup>`n`</sup>.  Throws an IllegalArgumentException if this value is 0 and `n` is negative. |
+| `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this values raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative. |
 | `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).</sub></sup>  |
-| `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if the floating point value of this value is strictly greater than `n`. |
-| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if floating point value of this value is strictly less than `n`. |
+| `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if the this value is strictly greater than `r`. |
+| `lessThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
 | `isZero` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
 | `isOne` &rarr; `boolean` | Returns `true` if this value is  canonical 1. |
 | `isMinusOne` &rarr; `boolean` | Returns `true` if this value is  canonical -1. |
