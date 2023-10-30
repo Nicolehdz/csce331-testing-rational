@@ -5,6 +5,7 @@ Let's get our testing framework set up now.  I will walk you through every step.
 
 1. [install maven](https://www.baeldung.com/install-maven-on-windows-linux-mac)
    * on Ubuntu: `sudo apt-get install maven`
+   * [on MacOS](https://www.digitalocean.com/community/tutorials/install-maven-mac-os)
 1. be in whatever root directory you want your project to live in
 1. create a maven project: `mvn -B archetype:generate -DgroupId=numbers -DartifactId=csce331-testing-rational -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4`
 1. sanity check; compile : `mvn compile`
