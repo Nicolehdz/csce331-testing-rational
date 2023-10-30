@@ -6,13 +6,13 @@ Coverage measures how much of our code our tests are exercising ("covering").  O
 <details>
    <summary>Does 100% coverage mean your code is correct?</summary>
 
-100% coverage does <strong>not</strong> mean your code is correct. This is because you can have 100% coverage and still be failing or missing tests.
+No. 100% coverage does <strong>not</strong> mean your code is correct. This is because you can have 100% coverage and still be failing or missing tests.
 </details>
 
 <details>
    <summary>Does 100% coverage and all tests passing mean your code is correct?</summary>
 
-Even 100% coverage with all tests passing does not mean the code is correct.  This is because your tests could still be missing some critical value that reveals incorrect behavior.  Your tests could also be broken and passing on incorrect behavior.
+No. Even 100% coverage with all tests passing does not mean the code is correct.  This is because your tests could still be missing some critical value that reveals incorrect behavior.  Your tests could also be broken and passing on incorrect behavior.
 </details>
 
 Code which is covered is *possibly* tested.  Code which is not covered is **not tested**.
