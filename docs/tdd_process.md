@@ -2,7 +2,7 @@
 [back to Rational(int, int)](test_rational_int_int_more.md)<br/>
 [back to Rational(Rational)](test_copy_constructor.md)<br/>
 [back to opposite()](test_opposite.md)<br/>
-[back to reciproical()](test_reciprocal.md)<br/>
+[back to reciprocal()](test_reciprocal.md)<br/>
 [back to times(Rational)](test_reciprocal.md)<br/>
 
 What we are doing is called **Test-Driven Development** (TDD).  The TDD process goes like this:
