@@ -29,7 +29,7 @@ Rational value = new Rational(original);
 // Then the copy's value should have numerator 2
 assertThat("the numerator should be 2", value.numerator(), is(2));
 // And the copy's value should have denominator 3
-assertThat("the denominatro should be 3", value.denominator(), is(3));
+assertThat("the denominator should be 3", value.denominator(), is(3));
 ```
 
 **IMPORTANT** Take care to strictly adhere to [the TDD process](tdd_process.md)
