@@ -15,7 +15,7 @@ No. 100% coverage does <strong>not</strong> mean your code is correct. This is b
 No. Even 100% coverage with all tests passing does not mean the code is correct.  This is because your tests could still be missing some critical value that reveals incorrect behavior.  Your tests could also be broken and passing on incorrect behavior.
 </details>
 
-Code which is covered is *possibly* tested.  Code which is not covered is **not tested**.
+Code which is covered is *possibly* tested.  Code which is not covered is **definitely not tested**.
 
 [next section: add jacoco to the project](add_jacoco.md)
 
