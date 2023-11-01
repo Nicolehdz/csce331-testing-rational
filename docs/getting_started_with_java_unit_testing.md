@@ -3,6 +3,9 @@
 
 Let's get our testing framework set up now.  I will walk you through every step.
 
+1. install Java 17 JDK
+   * on Ubuntu: `sudo apt-get install openjdk-17-jdk`
+   * [on MacOS](https://medium.com/java-mvp/install-openjdk-17-on-macos-c0ddb3ac9f0e)
 1. [install maven](https://www.baeldung.com/install-maven-on-windows-linux-mac)
    * on Ubuntu: `sudo apt-get install maven`
    * [on MacOS](https://www.digitalocean.com/community/tutorials/install-maven-mac-os)
