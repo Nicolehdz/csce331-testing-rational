@@ -8,6 +8,9 @@ Let's get our testing framework set up now.  I will walk you through every step.
    * [on MacOS](https://medium.com/java-mvp/install-openjdk-17-on-macos-c0ddb3ac9f0e)
 1. [install maven](https://www.baeldung.com/install-maven-on-windows-linux-mac)
    * on Ubuntu: `sudo apt-get install maven`
+   * if you have java 17, you want maven 3.9.
+   * if you get an older maven, you need an older java.
+     * see [Maven Releases History](https://maven.apache.org/docs/history.html) to determine which version of java you need for ther version of maven you have (or vice versa)
 1. be in whatever root directory you want your project to live in
 1. create a maven project: `mvn -B archetype:generate -DgroupId=numbers -DartifactId=csce331-testing-rational -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4`
 1. sanity check; compile : `mvn compile`
