@@ -22,8 +22,8 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this values raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative. |
 | `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).</sub></sup>  |
 | `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
-| `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
-| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
+| `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `r`. |
+| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `n`. |
 | `lessThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
 | `isZero` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
 | `isOne` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
