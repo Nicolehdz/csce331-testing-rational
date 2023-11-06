@@ -21,11 +21,13 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `dividedBy(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the quotient of this value and `r`. Throws an IllegalArgumentException if `r` is 0. |
 | `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this values raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative. |
 | `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).</sub></sup>  |
-| `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if the this value is strictly greater than `r`. |
+| `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
+| `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
+| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
 | `lessThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
 | `isZero` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
-| `isOne` &rarr; `boolean` | Returns `true` if this value is  canonical 1. |
-| `isMinusOne` &rarr; `boolean` | Returns `true` if this value is  canonical -1. |
+| `isOne` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
+| `isMinusOne` &rarr; `boolean` | Returns `true` if this value is canonical -1. |
 | `toString()` &rarr; `String` | Returns the string representation of this value. Whole numbers are not represented as fractions, e.g. "7" not "7/1".  The negative sign, if there is one, goes in front of the number, e.g. "-1/7" not "1/-7".|
 
 At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (and don't forget the `Comparable<Number>` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
