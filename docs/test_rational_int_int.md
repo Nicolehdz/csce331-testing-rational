@@ -21,7 +21,7 @@ In `RationalTest.java`, add the following test in its own function:
 
 ```java
 // Given that I have created a Rational value using arguments `2`` and `3`
-Rational value = new Rational(a, b);
+Rational value = new Rational(2, 3);
 // Then the value should have numerator `2`
 assertThat("the numerator should be 2", value.numerator(), is(2));
 // And the value should have denominator `3`
