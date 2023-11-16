@@ -25,9 +25,9 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `r`. |
 | `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `n`. |
 | `lessThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
-| `isZero` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
-| `isOne` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
-| `isMinusOne` &rarr; `boolean` | Returns `true` if this value is canonical -1. |
+| `isZero()` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
+| `isOne()` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
+| `isMinusOne()` &rarr; `boolean` | Returns `true` if this value is canonical -1. |
 | `toString()` &rarr; `String` | Returns the string representation of this value. Whole numbers are not represented as fractions, e.g. "7" not "7/1".  The negative sign, if there is one, goes in front of the number, e.g. "-1/7" not "1/-7".|
 
 At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (and don't forget the `Comparable<Number>` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
