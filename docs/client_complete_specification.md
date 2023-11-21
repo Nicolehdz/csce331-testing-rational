@@ -13,14 +13,14 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `Rational(r: Rational)` | Constructs a copy of the given `Rational`. |
 | `numerator()` &rarr; `integer` | Returns the numerator of this value. |
 | `denominator()` &rarr; `integer` | Returns the denominator of this value. |
-| `opposite()` &rarr; `Rational` | Returns a new rational number which is the additive inverse of this value.<br /><sup><sub>Additive inverse means the sum of the values is 0, e.g. <sup>2</sup>/<sub>3</sub> + <sup>-2</sup>/<sub>3</sub> = 0 so <sup>-2</sup>/<sub>3</sub> is the additive inverse of <sup>2</sup>/<sub>3</sub>.</sub></sup> |
+| `opposite()` &rarr; `Rational` | Returns a new rational number which is the additive inverse of this value. Throws an IllegalArgumentException if the operation would cause integer overflow.<br /><sup><sub>Additive inverse means the sum of the values is 0, e.g. <sup>2</sup>/<sub>3</sub> + <sup>-2</sup>/<sub>3</sub> = 0 so <sup>-2</sup>/<sub>3</sub> is the additive inverse of <sup>2</sup>/<sub>3</sub>.</sub></sup> |
 | `reciprocal()` &rarr; `Rational` | Returns a new rational number which is the multiplicative inverse of this value. Throws an IllegalArgumentException if this value is 0.<br /><sup><sub>Multiplicative inverse means the product of the values is 1, e.g. <sup>2</sup>/<sub>3</sub> * <sup>3</sup>/<sub>2</sub> = 1 so <sup>3</sup>/<sub>2</sub> is the multiplicative inverse of <sup>2</sup>/<sub>3</sub>.</sub></sup> |
-| `plus(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the sum of this value and `r`. |
-| `minus(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the difference of this value and `r`. |
-| `times(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the product of this value and `r`. |
-| `dividedBy(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the quotient of this value and `r`. Throws an IllegalArgumentException if `r` is 0. |
-| `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this values raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative. |
-| `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).</sub></sup>  |
+| `plus(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the sum of this value and `r`. Throws an IllegalArgumentException if the operation would cause integer overflow. |
+| `minus(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the difference of this value and `r`. Throws an IllegalArgumentException if the operation would cause integer overflow. |
+| `times(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the product of this value and `r`. Throws an IllegalArgumentException if the operation would cause integer overflow. |
+| `dividedBy(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the quotient of this value and `r`. Throws an IllegalArgumentException if `r` is 0 or the operation would cause integer overflow. |
+| `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this values raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative or the operation would cause integer overflow. |
+| `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).<br/>A Rational value should be "equal" to a single-precision floating-point value if their difference is strictly less than 2<sup>-20</sup>.<br/>A Rational value should be "equal" to a double-precision floating-point value if their difference is strictly less than 2<sup>-40</sup>.</sub></sup>  |
 | `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
 | `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `r`. |
 | `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `n`. |
@@ -29,6 +29,8 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `isOne()` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
 | `isMinusOne()` &rarr; `boolean` | Returns `true` if this value is canonical -1. |
 | `toString()` &rarr; `String` | Returns the string representation of this value. Whole numbers are not represented as fractions, e.g. "7" not "7/1".  The negative sign, if there is one, goes in front of the number, e.g. "-1/7" not "1/-7".|
+
+`integer` means a 32-bit signed integer.
 
 At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (and don't forget the `Comparable<Number>` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
 
