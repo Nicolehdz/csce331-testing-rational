@@ -32,6 +32,8 @@ We sent our refined functional requirements to the client. The client reviewed t
 
 `integer` means a 32-bit signed integer.
 
+All operations on `Rational`s should have no side effects, i.e. should not modify the arguments or the object that recieves the call.
+
 At this this point, we now know the methods and their signatures for every operation the user of the `Rational` class should be able to perform (and don't forget the `Comparable<Number>` methods!).  There may be other methods we need or want to write, but this list is the list of all the methods that we *must* have.
 
 Now, it's time to think about measuring the functional correctness of these methods.  We will do this one function at a time, starting with what seems like the simplest and most fundamental operation: construction.
