@@ -21,9 +21,9 @@ We sent our refined functional requirements to the client. The client reviewed t
 | `dividedBy(r: Rational)` &rarr; `Rational` | Returns a new rational number which is the quotient of this value and `r`. Throws an IllegalArgumentException if `r` is 0 or the operation would cause integer overflow. |
 | `raisedToThePowerOf(n: integer)` &rarr; `Rational` | Returns a new rational number which is this value raised to the power of `n`.  Throws an IllegalArgumentException if this value is 0 and `n` is negative or the operation would cause integer overflow. |
 | `equals(o: Object)` &rarr; `boolean` | Returns `true` if the values are equal, and `false` if not.<br /><sup><sub>Rationals are comparable only with Rationals and Numbers (see: `java.lang.Number`).<br/>A Rational value should be "equal" to a single-precision floating-point value if their difference is strictly less than 2<sup>-20</sup>.<br/>A Rational value should be "equal" to a double-precision floating-point value if their difference is strictly less than 2<sup>-40</sup>.</sub></sup>  |
-| `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`. |
+| `greaterThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `n`.<br /><sup><sub>See also: `equals(Object)`.</sub></sup> |
 | `greaterThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly greater than `r`. |
-| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `n`. |
+| `lessThan(n: Number)` &rarr; `boolean` | Returns `true` if this value is strictly less than `n`.<br /><sup><sub>See also: `equals(Object)`.</sub></sup> |
 | `lessThan(r: Rational)` &rarr; `boolean` | Returns `true` if this value is strictly less than `r`. |
 | `isZero()` &rarr; `boolean` | Returns `true` if this value is canonical 0. |
 | `isOne()` &rarr; `boolean` | Returns `true` if this value is canonical 1. |
