@@ -12,12 +12,13 @@
   <description>Learn and practice Test-Driven Development in Java with Maven, JUnit, Hamcrest, and Jacoco.</description>
   <url>https://reimagined-train-wl296om.pages.github.io/</url>
 
-  <properties>
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.release>17</maven.compiler.release>
-  </properties>
+</properties>
+
 
   <dependencies>
     <dependency>
@@ -56,7 +57,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>3.9.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -140,4 +141,15 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <distributionManagement>
+  <repository>
+    <id>your-repository-id</id>
+    <name>Repository Name</name>
+    <url>https://repository-url</url>
+  </repository>
+  </distributionManagement>
+
+
+
 </project>

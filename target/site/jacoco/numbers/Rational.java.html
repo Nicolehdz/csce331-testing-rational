@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Rational.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">csce-testing-rational</a> &gt; <a href="index.source.html" class="el_package">numbers</a> &gt; <span class="el_source">Rational.java</span></div><h1>Rational.java</h1><pre class="source lang-java linenums">package numbers;
+
+public class Rational 
+{
+    private int theNumerator;
+    private int theDenominator;      
+
+    public Rational() {
+<span class="fc" id="L9">        this(0);</span>
+<span class="fc" id="L10">    }</span>
+
+    public Rational(int a) {
+<span class="fc" id="L13">        this(a, 1);</span>
+<span class="fc" id="L14">    }</span>
+
+<span class="fc" id="L16">    public Rational(int a, int b) {  </span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (b == 0) {</span>
+<span class="fc" id="L18">            throw new IllegalArgumentException(&quot;Denominator cannot be zero.&quot;);</span>
+        }
+        
+<span class="fc" id="L21">        int gcd = findGCD(Math.abs(a), Math.abs(b));</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        this.theNumerator = (b &gt; 0) ? a / gcd : -a / gcd;</span>
+<span class="fc" id="L23">        this.theDenominator = Math.abs(b) / gcd;</span>
+<span class="fc" id="L24">    }</span>
+
+<span class="fc" id="L26">    public Rational(Rational r) {</span>
+<span class="fc" id="L27">        this.theNumerator = r.theNumerator;</span>
+<span class="fc" id="L28">        this.theDenominator = r.theDenominator;</span>
+<span class="fc" id="L29">    }</span>
+
+    public int numerator() {
+<span class="fc" id="L32">        return theNumerator;</span>
+    }
+
+    public int denominator() {
+<span class="fc" id="L36">        return theDenominator;        </span>
+    }
+
+    public Rational opposite() {
+<span class="fc" id="L40">        return new Rational(-this.theNumerator, this.theDenominator);</span>
+    }
+
+    public Rational reciprocal() {
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (this.theNumerator == 0) {</span>
+<span class="fc" id="L45">            throw new IllegalArgumentException(&quot;Cannot calculate reciprocal of zero.&quot;);</span>
+        }
+<span class="fc" id="L47">        return new Rational(this.theDenominator, this.theNumerator);</span>
+    }
+
+    public Rational times(Rational r) {
+<span class="fc" id="L51">        int newNumerator = this.theNumerator * r.theNumerator;</span>
+<span class="fc" id="L52">        int newDenominator = this.theDenominator * r.theDenominator;</span>
+<span class="fc" id="L53">        return new Rational(newNumerator, newDenominator);</span>
+    }
+
+    public Rational plus(Rational r) {
+        // Cross-multiply to find a common denominator
+<span class="fc" id="L58">        int commonDenominator = this.theDenominator * r.theDenominator;</span>
+
+        // Calculate new numerators
+<span class="fc" id="L61">        int newNumerator1 = this.theNumerator * r.theDenominator;</span>
+<span class="fc" id="L62">        int newNumerator2 = r.theNumerator * this.theDenominator;</span>
+
+        // Sum of numerators
+<span class="fc" id="L65">        int sumNumerator = newNumerator1 + newNumerator2;</span>
+
+        // Create a new Rational with the sum
+<span class="fc" id="L68">        return new Rational(sumNumerator, commonDenominator);</span>
+    }
+
+    public Rational minus(Rational r) {
+        // Cross-multiply to find a common denominator
+<span class="fc" id="L73">        int commonDenominator = this.theDenominator * r.theDenominator;</span>
+
+        // Calculate new numerators
+<span class="fc" id="L76">        int newNumerator1 = this.theNumerator * r.theDenominator;</span>
+<span class="fc" id="L77">        int newNumerator2 = r.theNumerator * this.theDenominator;</span>
+
+        // Difference of numerators
+<span class="fc" id="L80">        int differenceNumerator = newNumerator1 - newNumerator2;</span>
+
+        // Create a new Rational with the difference
+<span class="fc" id="L83">        return new Rational(differenceNumerator, commonDenominator);</span>
+    }
+
+    public Rational dividedBy(Rational r) {
+        // Ensure the denominator of the divisor is not zero
+<span class="fc bfc" id="L88" title="All 2 branches covered.">        if (r.theNumerator == 0) {</span>
+<span class="fc" id="L89">            throw new IllegalArgumentException(&quot;Cannot divide by zero.&quot;);</span>
+        }
+
+<span class="fc" id="L92">        int newNumerator = this.theNumerator * r.theDenominator;</span>
+<span class="fc" id="L93">        int newDenominator = this.theDenominator * r.theNumerator;</span>
+<span class="fc" id="L94">        return new Rational(newNumerator, newDenominator);</span>
+    }
+
+    public Rational raisedToThePowerOf(int n) {
+        // Check for the case where the numerator is zero and the power is negative
+<span class="fc bfc" id="L99" title="All 4 branches covered.">        if (this.theNumerator == 0 &amp;&amp; n &lt; 0) {</span>
+<span class="fc" id="L100">            throw new IllegalArgumentException(&quot;Cannot raise zero to a negative power.&quot;);</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        } else if (n &lt; 0) {</span>
+            // For a negative power, swap numerator and denominator and raise to the positive power
+<span class="fc" id="L103">            return new Rational((int) Math.pow(this.theDenominator, -n), (int) Math.pow(this.theNumerator, -n));</span>
+<span class="fc bfc" id="L104" title="All 2 branches covered.">        } else if (n &gt; 0) {</span>
+            // Raise to the positive power
+<span class="fc" id="L106">            return new Rational((int) Math.pow(this.theNumerator, n), (int) Math.pow(this.theDenominator, n));</span>
+        } else {
+            // Power of zero, result is 1
+<span class="fc" id="L109">            return new Rational(1);</span>
+        }
+    }
+
+    public boolean equals(Object o) {
+<span class="fc bfc" id="L114" title="All 2 branches covered.">        if (this == o) return true;</span>
+<span class="fc bfc" id="L115" title="All 4 branches covered.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L116">        Rational rational = (Rational) o;</span>
+<span class="fc bfc" id="L117" title="All 4 branches covered.">        return this.theNumerator == rational.theNumerator &amp;&amp; this.theDenominator == rational.theDenominator;</span>
+    }
+    
+    public boolean greaterThan(Number n) {
+<span class="fc bfc" id="L121" title="All 2 branches covered.">        if (n instanceof Integer) {</span>
+<span class="fc bfc" id="L122" title="All 2 branches covered.">            return this.theNumerator &gt; n.intValue() * this.theDenominator;</span>
+<span class="fc bfc" id="L123" title="All 2 branches covered.">        } else if (n instanceof Double) {</span>
+<span class="fc bfc" id="L124" title="All 2 branches covered.">            return this.theNumerator &gt; n.doubleValue() * this.theDenominator;</span>
+        } else {
+<span class="fc" id="L126">            throw new IllegalArgumentException(&quot;Unsupported Number type&quot;);</span>
+        }
+    }
+    
+    public boolean greaterThan(Rational r) {
+<span class="fc bfc" id="L131" title="All 2 branches covered.">        return this.theNumerator * r.theDenominator &gt; r.theNumerator * this.theDenominator;</span>
+    }
+
+    public boolean lessThan(Number n) {
+<span class="fc bfc" id="L135" title="All 2 branches covered.">        if (n instanceof Integer) {</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">            return this.theNumerator &lt; n.intValue() * this.theDenominator;</span>
+<span class="fc bfc" id="L137" title="All 2 branches covered.">        } else if (n instanceof Double) {</span>
+<span class="fc bfc" id="L138" title="All 2 branches covered.">            return this.theNumerator &lt; n.doubleValue() * this.theDenominator;</span>
+        } else {
+<span class="fc" id="L140">            throw new IllegalArgumentException(&quot;Unsupported Number type&quot;);</span>
+        }
+    }
+    
+
+    public boolean lessThan(Rational r) {
+<span class="fc bfc" id="L146" title="All 2 branches covered.">        return this.theNumerator * r.theDenominator &lt; r.theNumerator * this.theDenominator;</span>
+    }   
+
+    public boolean isZero() {
+<span class="fc bfc" id="L150" title="All 2 branches covered.">        return this.theNumerator == 0;</span>
+    }
+
+    public boolean isOne() {
+<span class="fc bfc" id="L154" title="All 2 branches covered.">        return this.theNumerator == this.theDenominator;</span>
+    }
+
+    public boolean isMinusOne() {
+<span class="fc bfc" id="L158" title="All 2 branches covered.">        return this.theNumerator == -this.theDenominator;</span>
+    }
+
+    public String toString() {
+<span class="fc bfc" id="L162" title="All 2 branches covered.">        if (this.theDenominator == 1) {</span>
+            // If the denominator is 1, print only the numerator
+<span class="fc" id="L164">            return Integer.toString(this.theNumerator);</span>
+        } else {
+            // Otherwise, print the numerator/denominator
+<span class="fc" id="L167">            return this.theNumerator + &quot;/&quot; + this.theDenominator;</span>
+        }
+    }
+
+    private int findGCD(int a, int b) {
+<span class="fc bfc" id="L172" title="All 2 branches covered.">        while (b != 0) {</span>
+<span class="fc" id="L173">            int temp = b;</span>
+<span class="fc" id="L174">            b = a % b;</span>
+<span class="fc" id="L175">            a = temp;</span>
+<span class="fc" id="L176">        }</span>
+<span class="fc" id="L177">        return Math.abs(a);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
