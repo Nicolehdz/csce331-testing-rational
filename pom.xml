@@ -18,8 +18,6 @@
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.release>17</maven.compiler.release>
 </properties>
-
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -146,7 +144,7 @@
   <repository>
     <id>your-repository-id</id>
     <name>Repository Name</name>
-    <url>https://repository-url</url>
+    <url>https://github.com/Nicolehdz/csce331-testing-rational.git</url>
   </repository>
   </distributionManagement>
 
