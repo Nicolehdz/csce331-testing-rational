@@ -10,7 +10,7 @@
 
   <name>csce-testing-rational</name>
   <description>Learn and practice Test-Driven Development in Java with Maven, JUnit, Hamcrest, and Jacoco.</description>
-  <url>https://reimagined-train-wl296om.pages.github.io/</url>
+  <url>https://github.com/Nicolehdz/csce331-testing-rational/tree/main</url>
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -139,15 +139,5 @@
       </plugin>
     </plugins>
   </reporting>
-
-  <distributionManagement>
-  <repository>
-    <id>your-repository-id</id>
-    <name>Repository Name</name>
-    <url>https://github.com/Nicolehdz/csce331-testing-rational.git</url>
-  </repository>
-  </distributionManagement>
-
-
 
 </project>
